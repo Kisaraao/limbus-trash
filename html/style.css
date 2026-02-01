@@ -1,0 +1,171 @@
+    *{
+        font-family: "Sarasa UI SC", "Sarasa Gothic SC", "Sarasa Mono SC", 
+        "Microsoft YaHei UI", "Microsoft YaHei", 
+        "Segoe UI", "PingFang SC", "Hiragino Sans GB", 
+        "WenQuanYi Micro Hei", sans-serif;
+        margin: 0;
+        padding: 0;
+        -webkit-user-drag: none;
+        text-shadow: black 0px 2px 2px;
+        color: white;
+    }
+    body{
+        background-image: url(./img/bg/Story_outside_the_dungeon_past.webp);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .numeric_icon{
+        width:25px;
+        margin:5px;
+    }
+    .big_bg{
+        background-color: rgba(0, 0, 0, 0.5);
+        height:100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .rank{
+        width: 70px;
+    }
+    #id_name{
+        font-size: 28px;
+        font-weight: bold;
+        margin: 15px;
+        color: #f2cb95;
+    }
+
+    .sin_icon{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    table{
+        width: 900px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    table:hover{
+        background-color: rgba(129, 129, 129, 0.7);
+        transition: all 0.2s;
+    }
+
+    table:hover td{
+        background-color: rgba(0, 0, 0, 0.7);
+        border:solid 1px #535353;
+        transition: all 0.2s;
+    }
+
+    tr{
+        display: flex;
+    }
+    td{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 6.4px;
+        border:solid 1px #363839;
+        background-color: rgba(24, 25, 26, 0.7);
+    }
+    table:hover td:hover{
+        transition: all 0.2s;
+        background-color: rgba(51, 54, 56, 0.7);
+        border:solid 1px #ffffff;
+    }
+    table tr:nth-child(1) td:nth-child(1){
+        width: 90px;
+    }
+    table tr:nth-child(1) td:nth-child(2){
+        width: 170px;
+    }
+    table tr:nth-child(1) td:nth-child(6) {
+        flex: 1;
+    }
+    table tr:nth-child(2) td:nth-child(1){
+        width: 90px;
+    }
+    table tr:nth-child(2) td:nth-child(2) {
+        flex: 1;
+        justify-content: center;
+        align-items: stretch;
+    }
+    z{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    x{
+        display: flex;
+        align-items: center;
+        width:max-content;
+    }
+    c{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        width:max-content;
+        padding-left: 8px;
+        border-left: 2px solid #93F03E33;
+    }
+    td x{
+        line-height: 20px;
+    }
+
+    .effect{
+        display: inline-flex;
+        position: relative;
+        text-decoration: underline;
+        cursor: pointer;
+        user-select: none;
+        font-size: 14px;
+    }
+    .tip{
+        display: none;
+        position: absolute;
+        bottom:100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 4px;
+        border-radius: 4px;
+        z-index: 1000;
+        flex-direction: column;
+        width:max-content;
+        max-width: 650px;
+        align-items: flex-start;
+    }
+    .effect_icon{
+        width: 18px;
+    }
+    .effect:hover .tip{
+        display: flex;
+    }
+    .skill-action {
+        font-style: italic;
+        color: #aaa;
+        font-size: 0.9em;
+        margin-left: 10px;
+    }
+    .damage_weight{
+        color: rgb(94, 156, 206);
+        font-size: 0.85em;
+        font-style: italic;
+        background: rgba(0,0,0,0.3);
+        padding: 1px 4px;
+        border-radius: 3px;
+        border: 1px solid #227fca44;
+    }
+    .skill_icon{
+        height: 70px;
+    }
